@@ -26,12 +26,22 @@ for(var i = 0; i < featuredPagesObject.length; i++){
     document.getElementById('featuredArticlesHolder').appendChild(f);
 
     var t = document.createElement('a');
-    t.className = 'FeaturedPagesLink';
+    t.className = 'featuredPagesLink';
     var innerLink = document.createTextNode(featuredPagesObject[i].title);
     t.setAttribute('href', featuredPagesObject[i].web);
     t.setAttribute('target', '_blank');
     t.appendChild(innerLink);
     document.getElementsByClassName('indivFeaturedPages')[i].appendChild(t);
+
+    var d = document.createElement('p');
+    d.className = 'featuredDescription';
+    d.innerHTML = featuredPagesObject[i].description;
+    document.getElementsByClassName('indivFeaturedPages')[i].appendChild(d);
+
+    var c = document.createElement('p');
+    c.className = 'featuredTime';
+    c.innerHTML = "🕒 Estimated reading time: " + featuredPagesObject[i].readingTime + " minutes";
+    document.getElementsByClassName('indivFeaturedPages')[i].appendChild(c);
 }
 
 document.getElementById('close').addEventListener('click', hide);
