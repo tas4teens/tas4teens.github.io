@@ -2,6 +2,14 @@ html{
     scroll-behavior: smooth;
 }
 
+#emergencyMobileHeader{
+    display: none;
+}
+
+#mobileHeader{
+    display: none;
+}
+
 #header{
     background-color: darkgreen;
     width: 100%;
@@ -534,4 +542,91 @@ a{
     text-align: center;
     padding-top: 2%;
     padding-bottom: 2%;
+}
+
+@media only screen and (orientation: portrait){
+    #emergencyMobileHeader{
+        display: block;
+        background-color: #f56042;
+        font-weight: bold;
+        color: white;
+        display: flex;
+        font-size: 3.5vw; 
+    }
+
+    #emergencyMobile{
+        margin-left: 3vw;
+        width: 91%;
+        margin-top: 1%;
+        margin-bottom: 1%;
+    }
+
+    #closeMobile{
+        margin-top: 1%;
+        margin-bottom: 1%;
+    }
+
+
+    #menu{
+        padding-left: 4vw;
+        color: white;
+        font-size: 6vw;
+        padding-right: 4vw;
+        margin-bottom: auto;
+        margin-top: auto;
+        padding-left: 4vw;
+        margin-left: 2vw;
+        transition: 0.5s;
+        -webkit-user-select: none;
+    }
+
+    #menu:hover{
+        color: skyblue;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+
+    #mobileHeader{
+        display: block;
+        background-color: green;
+        display: flex;
+    }
+
+    #headerLinkHolderMobile{
+        padding-top: 2%;
+        padding-bottom: 2%;
+        margin-left: 2%;
+    }
+
+    #headerLinkMainMobile{
+        color: white;
+        font-size: 6vw;
+
+        margin-top: 0;
+        margin-bottom: 0.2%;
+        font-weight: bold;
+    }
+    
+    #headerLinkSubMobile{
+        color: white;
+        margin-top: 0;
+        font-size: 3.5vw;
+        font-style: italic;
+        opacity: 0.8;
+        margin-bottom: 0;
+    }
+
+    #headerLinkMobile{
+        text-decoration: none;
+        width: 75%;
+        color: white;
+    }
+
+    #emergencyHeader{
+        display: none;
+    }
+
+    #header{
+        display: none;
+    }
 }
