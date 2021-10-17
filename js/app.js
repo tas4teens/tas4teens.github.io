@@ -63,19 +63,21 @@ for(var i = 0; i < featuredPagesObject.length; i++){
 
 window.onscroll = function() {scrollFunction()};
 
-function scrollFunction() {
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+/*function scrollFunction() {
+  if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
     document.getElementById("emergencyHeader").style.position = 'fixed';
     document.getElementById("emergencyMobileHeader").style.position = 'fixed';
     document.getElementById("emergencyHeader").style.width = '102%';
     document.getElementById("emergencyMobileHeader").style.width = '102%';
+    document.getElementById("emergencyMobileHeader").style.marginTop = '1.3%';
   } else {
     document.getElementById("emergencyHeader").style.position = 'relative';
     document.getElementById("emergencyMobileHeader").style.position = 'relative';
     document.getElementById("emergencyHeader").style.width = '100%';
     document.getElementById("emergencyMobileHeader").style.width = '100%';
+    document.getElementById("emergencyMobileHeader").style.marginTop = '0';
   }
-}
+}*/
 
 function scrollBackToTop(){
     document.getElementById('header').scrollIntoView();

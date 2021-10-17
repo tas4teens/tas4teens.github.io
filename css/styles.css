@@ -569,6 +569,8 @@ a{
         font-size: 3.5vw; 
         position: relative;
         z-index: 2;
+        margin-top: 0;
+        position: sticky;
     }
 
     #emergencyMobile{
@@ -606,6 +608,7 @@ a{
         display: block;
         background-color: green;
         display: flex;
+        position: relative;
     }
 
     #headerLinkHolderMobile{
