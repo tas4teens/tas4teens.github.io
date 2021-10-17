@@ -4,6 +4,10 @@ function hide(){
     document.getElementById('emergencyHeader').style.display = 'none';
 }
 
+function hideMobile(){
+    document.getElementById('emergencyMobileHeader').style.display = 'none';
+}
+
 function showMoreStats(){
     document.getElementById('entireStatHolder2').style.display = 'block';
     document.getElementById('entireStatHolder2').style.display = 'flex';
@@ -57,6 +61,29 @@ for(var i = 0; i < featuredPagesObject.length; i++){
     document.getElementsByClassName('indivFeaturedPages')[i].appendChild(c);
 }
 
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("emergencyHeader").style.position = 'fixed';
+    document.getElementById("emergencyMobileHeader").style.position = 'fixed';
+    document.getElementById("emergencyHeader").style.width = '102%';
+    document.getElementById("emergencyMobileHeader").style.width = '102%';
+  } else {
+    document.getElementById("emergencyHeader").style.position = 'relative';
+    document.getElementById("emergencyMobileHeader").style.position = 'relative';
+    document.getElementById("emergencyHeader").style.width = '100%';
+    document.getElementById("emergencyMobileHeader").style.width = '100%';
+  }
+}
+
+function scrollBackToTop(){
+    document.getElementById('header').scrollIntoView();
+    document.getElementById('mobileHeader').scrollIntoView();
+}
+
 document.getElementById('close').addEventListener('click', hide);
+document.getElementById('closeMobile').addEventListener('click', hideMobile);
 document.getElementById('seeMoreStats').addEventListener('click', showMoreStats);
 document.getElementById('menu').addEventListener('click', showMenu);
+document.getElementById('backToTop').addEventListener('click', scrollBackToTop);
