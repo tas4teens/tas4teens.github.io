@@ -1,3 +1,5 @@
+var a = 0;
+
 function hide(){
     document.getElementById('emergencyHeader').style.display = 'none';
 }
@@ -16,6 +18,17 @@ function showMoreStats(){
     link.setAttribute('target', '_blank');
     link.appendChild(insideLink);
     document.getElementById('seeMoreStats').appendChild(link);
+}
+
+function showMenu(){
+    a++;
+    if(a%2 === 1){
+        document.getElementById('mobileNavigation').style.display = 'block';
+        document.getElementById('header').style.borderBottom = '2px solid white';
+    }else{
+        document.getElementById('mobileNavigation').style.display = 'none';
+    }
+    
 }
 
 var featuredPagesObject = [{title: "Substance use in adolescents - What every adolescent should know", description: "Learn all about substance use and how it can lead to substance use disorders (SUD), with examples of each. Sections include: The definition of substance use, causes of substance use, the cycle of SUD, why substance use is so harmful, and so on.", readingTime: 10, web: '/sud'}, {title: "COVID-19 and Substance Use", description: "This page discusses the impact of COVID-19 on substance use, as well as what could be causing it.", readingTime: 6, web: '/covid-19-and-substance-use'}, {title: "About Marijuana", description: "Read all about marijuana, which is one of the most popular illicit drugs used by adolescents.", readingTime: 8, web: '/about-marijuana'}];
@@ -46,3 +59,4 @@ for(var i = 0; i < featuredPagesObject.length; i++){
 
 document.getElementById('close').addEventListener('click', hide);
 document.getElementById('seeMoreStats').addEventListener('click', showMoreStats);
+document.getElementById('menu').addEventListener('click', showMenu);
