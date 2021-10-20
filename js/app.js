@@ -61,8 +61,6 @@ for(var i = 0; i < featuredPagesObject.length; i++){
     document.getElementsByClassName('indivFeaturedPages')[i].appendChild(c);
 }
 
-window.onscroll = function() {scrollFunction()};
-
 /*function scrollFunction() {
   if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
     document.getElementById("emergencyHeader").style.position = 'fixed';

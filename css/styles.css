@@ -38,7 +38,7 @@ body{
 
 #emergencyHeader{
     color: white;
-    background-color: #f56042;
+    background-color: #f08400;
     margin-bottom: 0;
     display: flex;
     z-index: 2;
@@ -194,7 +194,10 @@ body{
 }
 
 #missionHolder{
-    background-image: url('https://images.pexels.com/photos/3882464/pexels-photo-3882464.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500');
+    
+    background-image: url('https://images.pexels.com/photos/7667727/pexels-photo-7667727.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500');
+    background-position-y: center;
+
     background-size: 110%;
     margin-top: 0;
     padding: 2%;
@@ -224,7 +227,9 @@ body{
 
 #importanceHolder{
     margin-top: 0;
-    background-color: #326fa8;
+    background-color: #1c803c;
+
+    
 
 }
 
@@ -249,7 +254,6 @@ body{
     margin-left: 15%;
     margin-right: 15%;
     padding-top: 3%;
-    padding-bottom: 1%;
     text-decoration: underline;
    
 }
@@ -317,17 +321,20 @@ body{
 
 #readAllArticles{
     padding: 2%;
-    color: green;
+
     font-size: 1.7vw;
-    border: 2px solid green;
+  
     border-radius: 10px;
     transition: 0.7s;
+    color: green;
+    border: 2px solid green;
 }
 
 #readAllArticlesHolder{
     text-align: center;
     padding-bottom: 5%;
     padding-top: 4%;
+
 }
 
 #readmore:hover{
@@ -336,10 +343,10 @@ body{
 }
 
 #readAllArticles:hover{
-    background-color: green;
+    background-color: gray;
     color: white;
     transition: 0.7s;
-    border: 2px solid #326fa8;
+    
 }
 
 a{
@@ -365,14 +372,14 @@ a{
 }
 
 #statsHolder{
-    background-color: darkgreen;
-    
+    /*background-color: #009155;*/
+    background-color: #d9ffe2; 
 }
 
 .numberHolder{
     height: 20vw;
     width: 20vw;
-    border: 6px dotted skyblue;
+    border: 10px dotted gray;
     border-style: double;
     border-radius: 50%;
     position: relative;
@@ -387,19 +394,21 @@ a{
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: green;
     font-size: 3vw;
     text-align: center;
     -webkit-user-select: none;
+    font-weight: bold;
 }
 
 .subtext{
     font-size: 1.5vw;
     text-align: center;
-    color: white;
+    color: black;
     width: 90%;
     margin-left: 5%;
     margin-right: 5%;
+
 }
 
 .individualStatHolder{
@@ -411,21 +420,21 @@ a{
 }
 
 #seeMoreStats{
-    color: skyblue;
+    color: black;
     text-align: center;
     font-size: 2vw;
     padding: 2%;
-    border: 2px solid skyblue;
+ 
     -webkit-user-select: none;
     transition: 0.5s;
 }
 
 #seeMoreStats:hover{
-    background-color: skyblue;
-    color: darkgreen;
-    border: 2px solid skyblue;
+ 
+    color: green;
+
     cursor: pointer;
-    text-decoration: underline;
+    transition: 0.7s;
 }
 
 #addedLink:hover{
@@ -437,21 +446,21 @@ a{
     padding-top: 2%;
     padding-bottom: 2%;
     transition: 0.7s;
+    color: black;
 }
 
 #featuredArticles{
-    background-color: whitesmoke;    
+    background-color: whitesmoke;
+    padding-bottom: 2%;
 }
 
 .indivFeaturedPages{
-    margin-left: 10%;
-    margin-right: 10%;
-    background-color: white;
-    border: 4px solid darkgreen;
-    border-style: double;
-    margin-bottom: 1.5%;
-    padding-top: 1.5%;
-    padding-bottom: 1%;
+    margin-left: 15%;
+    margin-right: 15%;
+    border-left: 4px solid darkgreen;
+    
+    margin-top: 3%;
+    margin-bottom: 2%;
     padding-left: 2%;
     padding-right: 2%;
 }
@@ -476,9 +485,6 @@ a{
     opacity: 0.8;
 }
 
-.indivFeaturedPages:hover{
-    border: 4px solid darkgreen;
-}
 
 #footer{
     background-color: darkgreen;
@@ -537,6 +543,17 @@ a{
     opacity: 0.85;
 }
 
+#explore{
+    color: black;
+}
+.subTitle{
+    font-size: 2vw;
+    opacity: 0.9;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 3%;
+}
+
 #contactInfo{
     font-size: 1.25vw;
     color: white;
@@ -562,7 +579,7 @@ a{
 @media only screen and (orientation: portrait){
     #emergencyMobileHeader{
         display: block;
-        background-color: #f56042;
+        background-color: #f08400;
         font-weight: bold;
         color: white;
         display: flex;
@@ -782,10 +799,11 @@ a{
     }
 
     #importanceSubText, #importanceSubText2{
-        font-size: 3.5vw;
+        font-size: 4vw;
         width: 80%;
         margin-left: 10%;
         margin-right: 10%;
+        color: white;
         
     }
 
@@ -793,6 +811,7 @@ a{
         flex-direction: column-reverse;
         width: 100%;
         margin-left: 0;
+        color: black;
     }
 
     #brainImgHolder{
@@ -806,6 +825,7 @@ a{
         width: 80%;
         margin-left: 10%;
         margin-right: 10%;
+        color: white;
     }
 
     #brainImg{
@@ -871,7 +891,6 @@ a{
         margin-left: 15%;
         margin-right: 15%;
         padding-top: 5%;
-        padding-bottom: 1%;
         text-decoration: underline;
        
     }
@@ -880,24 +899,32 @@ a{
         margin-left: 0;
         margin-right: 0;
         padding: 0;
+        width: 100%;
     }
 
     .indivFeaturedPages{
         width: 85%;
-        margin-left: 5%;
-        margin-right: 5%;
+        margin-left:5%;
+        margin-right: 10%;
+        border: 2px solid green;
+        justify-content: center;
     }
 
     .featuredPagesLink{
+        display: inline-block;
         font-size: 4.5vw;
+        padding-left: 2%;
+        margin-top: 1%;
     }
 
     .featuredDescription{
-        font-size: 3.2vw;
+        font-size: 3.5vw;
+        padding-left: 2%;
     }
 
     .featuredTime{
         font-size: 3vw;
+        padding-left: 2%;
     }
 
     #readAllArticles{
@@ -909,6 +936,16 @@ a{
     #readAllArticlesHolder{
         margin-top: 5%;
         padding-bottom: 10%;
+    }
+
+    .subTitle{
+        font-size: 4vw;
+        opacity: 0.9;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 3%;
+        margin-left: 10%;
+        margin-right: 10%;
     }
 
 }
