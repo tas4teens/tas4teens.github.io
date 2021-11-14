@@ -1,0 +1,151 @@
+#content{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+#title, #allSubstances{
+    font-size: 2.75vw;
+    text-align: center;
+    text-decoration: underline;
+    padding-top: 3%;
+    margin: 0;
+    font-weight: bold;
+}
+
+#subTitle{
+    font-size: 140%;
+    line-height: 1.7;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    padding-top: 1%;
+    padding-bottom: 1.5%;
+}
+
+.definition{
+    color: blue;
+}
+
+.definition:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.link{
+    color: black;
+}
+
+.img{
+    width: 30%;
+}
+
+.linkHolder{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    border-left: 3px solid green;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.innerHolder{
+    width: 55%;
+    margin-right: 10%;
+    margin-left: 5%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.link{
+    font-size: 2.5vw;
+    font-weight: bold;
+    color: green;
+    text-decoration: none;
+}
+
+.link:hover{
+    text-decoration: underline;
+}
+
+.linkDesc{
+    font-size: 1.5vw;
+}
+
+#comingSoon{
+    text-align: center;
+    opacity: 0.8;
+    font-size: 1.75vw;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 0;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+#email{
+    color: green;
+}
+
+#line{
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+
+
+@media only screen and (orientation: portrait){
+    #title, #allSubstances{
+        font-size: 6vw;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    #subTitle{
+        font-size: 4.25vw;
+        line-height: 1.6;
+    }
+
+    .linkHolder{
+        flex-direction: column-reverse;
+        border: none;
+        margin-bottom: 8%;
+    }
+
+    .img{
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .innerHolder{
+        text-align: center;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        
+    }
+
+    .link{
+        display: inline-block;
+        font-size: 5vw;
+        margin-top: 5%;
+    }
+
+    .linkDesc{
+        font-size: 4vw;
+        margin-top: 2%;
+    }
+
+    #comingSoon{
+        font-size: 4vw;
+        margin-top: 7%;
+        margin-bottom: 10%;
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 80%;
+    }
+}
